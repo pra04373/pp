@@ -27,9 +27,9 @@ class myThread (threading.Thread):
     def read(self):
         return self.ret, self.frame
 
-model = load_model('/home/pyimagesearch/Desktop/livevideo/vgg_2.h5')
+model = load_model('/home/pkumar/Desktop/livevideo/vgg_2.h5')
 HumanNames = ['nickole','praveen']
-cascade_classifier = cv2.CascadeClassifier('/home/pyimagesearch/Desktop/livevideo/haarcascade_frontalface_default.xml')
+cascade_classifier = cv2.CascadeClassifier('/home/pkumar/Downloads/haarcascade_frontalface_default.xml')
 # faceCascade = cv2.CascadeClassifier(cascadePath);
 
 thread = myThread(0)
